@@ -38,25 +38,25 @@ function createMainWindow() {
 	win.on('closed', onClosed);
 
 	//Hide window
-	win.on('minimize',function(event){
-		if (process.platform !== "linux") {
-			event.preventDefault()
-			mainWindow.hide();
-		}
-    });
-
-  	win.on('close', function (event) {
-        if(!app.isQuiting){
-			if (process.platform !== "linux") {
-				event.preventDefault()
-				mainWindow.hide();
-			}
-        }
-        return false;
-    });
+	// win.on('minimize',function(event){
+	// 	if (process.platform !== "linux") {
+	// 		event.preventDefault()
+	// 		mainWindow.hide();
+	// 	}
+    // });
+    //
+ //  	win.on('close', function (event) {
+    //     if(!app.isQuiting){
+	// 		if (process.platform !== "linux") {
+	// 			event.preventDefault()
+	// 			mainWindow.hide();
+	// 		}
+    //     }
+    //     return false;
+    // });
 
 	// Open the DevTools.
- 	win.webContents.openDevTools()
+ // 	win.webContents.openDevTools()
 
 	win.isResizable(true);
 
@@ -80,10 +80,10 @@ app.on('ready', () => {
 
 	// Create global listeners
 	var globalAccellerators = {
-		"Shift+VolumeDown" 		: handleVolumeDown,
-		"Shift+VolumeUp"		: handleVolumeUp,
-		"Shift+VolumeMute"		: handleVolumeMute,
-		"Shift+MediaPlayPause"	: handlePlayPause
+		"Shift+Down"              : handleVolumeDown,
+		"Shift+Up"		          : handleVolumeUp,
+		"Shift+Alt+M"             : handleVolumeMute,
+		"Shift+Alt+P"             : handlePlayPause
 	}
 
 	for (var acc in globalAccellerators) {

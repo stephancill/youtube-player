@@ -1,8 +1,9 @@
 # YouTube Player
 
 ## Global keyboard controls
-* `keyboard pause/play` - Pause/play video
-* `keyboard volume up/down/mute` - Video volume up/down/mute
+* `Shift + Alt + P` - Pause/play video
+* `Shift + Up/Down` - Video volume up/down
+* `Shift + Alt + M` - Video volume 0 (mute)
 
 (Also auto skips ads)
 
