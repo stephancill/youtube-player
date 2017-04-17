@@ -2,7 +2,7 @@
 
 ## Global keyboard controls
 * `Shift + Alt + P` - Pause/play video
-* `Shift + Up/Down` - Video volume up/down
+* `Shift + Alt + Up/Down` - Video volume up/down
 * `Shift + Alt + M` - Video volume 0 (mute)
 
 (Also auto skips ads)
